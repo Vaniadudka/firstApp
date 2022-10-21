@@ -6,7 +6,15 @@ class Student:
         self.name = name
         self.gladness = 50
         self.progress = 0
+        self.money = 0
+
         self.alive = True
+
+    def to_work(self):
+        print("Time to work")
+        self.progress += 0.7
+        self.money += 100
+        self.gladness -= 0.5
 
     def to_study(self):
         print("Time to study")
@@ -29,10 +37,14 @@ class Student:
         elif self.gladness <= 0:
             print("Depression...")
             self.alive = False
+        elif self.money <= 0:
+            print("No money good buy Univer")
+            self.alive = False
 
     def endofDay(self):
         print("Gladness: ", self.gladness)
         print("Progress: ", self.progress)
+        print("Money: ", self.money)
 
     def live(self, day):
         print("Day", str(day), " of ", self.name, "life")
