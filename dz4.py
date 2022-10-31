@@ -1,7 +1,7 @@
 class Human:
-    Brain = "I think"
-    Heart = "I circulate blood"
-    Legs = "I go"
+    Brain = ""
+    Heart = ""
+    Legs = ""
 
 
 
@@ -16,6 +16,6 @@ class Legs(Human):
     print("I go")
 
 
-Human.ShowInfo()
+
 
 
