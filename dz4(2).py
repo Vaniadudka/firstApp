@@ -17,3 +17,4 @@ class Rectangle(Figure):
     def Print(self):
         print(self.X)
         print(self.Y)
+
